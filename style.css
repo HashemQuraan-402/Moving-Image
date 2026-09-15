@@ -1,94 +1,163 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    background: linear-gradient(#200016,#10001f);
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+
+html {
+    scroll-behavior: smooth;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px;
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#200016, #10001f);
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+header {
     position: fixed;
-    width: 95%;
+    top: 0;
+    left: 0;
     z-index: 10;
-    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 4vw;
+    background: linear-gradient(to bottom, rgba(16, 0, 31, 0.78), transparent);
 }
-a{
+
+a {
     color: #fff;
     text-decoration: none;
 }
-header ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
 
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
 }
-header .logo{
-    text-transform: uppercase;
+
+header .logo {
     font-size: 30px;
- 
+    text-transform: uppercase;
 }
-header ul li{
-    margin-right: 30px;
-}
-header ul li a{
+
+header ul li a {
+    display: inline-block;
     padding: 6px 15px;
     border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
-header ul li a:hover ,.active{
+
+header ul li a:hover,
+header ul li a:focus-visible,
+.active {
     background-color: #fff;
-    color:#200016;
+    color: #200016;
+    outline: none;
 }
-.main{
-    width: 100%;
-    height: 100vh;
+
+.main {
     position: relative;
     display: flex;
+    width: 100%;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: background 0.35s ease;
 }
-.main::after{
-   
-    content: '';
+
+.main::after {
     position: absolute;
     bottom: 0;
-    height: 100px;
     width: 100%;
-    background: linear-gradient(to top,#200016,transparent);
-    
-} 
-.main img{
+    height: 100px;
+    background: linear-gradient(to top, #200016, transparent);
+    content: "";
+}
+
+.main img {
     position: absolute;
     width: 100%;
     height: 100vh;
     object-fit: cover;
-}
-#moon2{
-    mix-blend-mode: screen;
-    transform: translateY(100px);
-}
-.nodCry{
-    color: #fff;
-    font-size: 25px;
-    text-transform : uppercase;
-    transform: translateY(-200px);
-}
-.content{
-    color: #fff;
-    padding: 30px;
-    
-}
-.content h2{
-    font-size: 30px;
-    margin: 20px;
-}
-.content p{
-    margin: 20px;
+    pointer-events: none;
+    will-change: transform;
 }
 
+#moon2 {
+    mix-blend-mode: screen;
+    transition: opacity 0.25s ease;
+}
+
+.nodCry {
+    z-index: 1;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    will-change: transform, font-size;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 54px 30px 90px;
+    line-height: 1.7;
+}
+
+.content section {
+    scroll-margin-top: 110px;
+    margin-bottom: 56px;
+}
+
+.content h2 {
+    margin-bottom: 14px;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.content p {
+    color: #e8ddf2;
+    font-size: 18px;
+}
+
+@media (max-width: 760px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 20px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    header ul {
+        justify-content: flex-start;
+    }
+
+    header ul li a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
