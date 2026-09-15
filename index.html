@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Nod-Cry</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-
-        <header>
-            <h2 class = "logo"><a href = "#">nod-cry</a></h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A scroll-driven parallax landing-page demonstration built with HTML, CSS, and JavaScript.">
+    <title>Moving Image | Parallax Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo"><a href="#home">Parallax</a></h2>
+        <nav aria-label="Primary navigation">
             <ul>
-                <li><a href = "https://www.hoyoverse.com/en-us/" id = "home" class = "active" onmouseover="TurnTheRole(this.id)" onmouseout="returnTheRole(this.id)">Home</a></li>
-                <li><a href = "#" id = "version"  onmouseover="TurnTheRole(this.id)" onmouseout="returnTheRole(this.id)">Version</a></li>
-                <li><a href = "#" id = "story"  onmouseover="TurnTheRole(this.id)" onmouseout="returnTheRole(this.id)">Story</a></li>
-                <li><a href = "#" id = "location"  onmouseover="TurnTheRole(this.id)" onmouseout="returnTheRole(this.id)">Location</a></li>
-                <li><a href = "#" id = "characters"  onmouseover="TurnTheRole(this.id)" onmouseout="returnTheRole(this.id)">Characters</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#implementation" class="nav-link">Implementation</a></li>
+                <li><a href="https://github.com/HashemQuraan-402/Moving-Image" class="nav-link" target="_blank" rel="noreferrer">Source</a></li>
             </ul>
-        </header>
- 
-        <section class="main">
-            <img src="images/stars1.webp" alt="" id = "stars1">
-            <h2 class="nodCry">nod-cry</h2>
-            <img src="images/moon2.webp" alt="" id = "moon2">
-            <img src="images/mountains3.webp" alt="" id = "mountains3">
-            <img src="images/mountains4.webp" alt="" id = "mountains4">
-            <img src="images/river5.webp" alt="" id = "river5">
-            <img src="images/boat6.webp" alt="" id = "boat6">
-            <img src="images/mountains7.webp" alt="" id = "mountains7">
+        </nav>
+    </header>
+
+    <section class="main" id="home" aria-label="Layered parallax landscape">
+        <img src="images/stars1.webp" alt="" id="stars1" aria-hidden="true">
+        <h1 class="nodCry">Parallax</h1>
+        <img src="images/moon2.webp" alt="" id="moon2" aria-hidden="true">
+        <img src="images/mountains3.webp" alt="" id="mountains3" aria-hidden="true">
+        <img src="images/mountains4.webp" alt="" id="mountains4" aria-hidden="true">
+        <img src="images/river5.webp" alt="" id="river5" aria-hidden="true">
+        <img src="images/boat6.webp" alt="" id="boat6" aria-hidden="true">
+        <img src="images/mountains7.webp" alt="" id="mountains7" aria-hidden="true">
+    </section>
+
+    <main class="content">
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>This front-end experiment builds depth from independent visual layers. Scrolling moves the stars, moon, mountains, river, boat, and title at different speeds to produce a parallax effect.</p>
         </section>
 
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nulla ipsam totam dignissimos nihil dolore recusandae, asperiores qui facere expedita quod inventore vero laborum. Dolor consequuntur quae neque at voluptatibus voluptatem laborum animi, nam cum, quas alias ut laudantium ea recusandae perferendis exercitationem fuga sequi doloribus obcaecati non vel ipsam consectetur hic omnis? Sapiente, et ipsa iusto placeat dignissimos necessitatibus deserunt possimus dolorem voluptates recusandae a veritatis ipsam. Itaque, magni ad corporis atque impedit perspiciatis, iure aspernatur perferendis consequuntur expedita asperiores aliquid commodi earum veritatis ducimus provident! Dicta, molestiae. Consequuntur, nisi velit! Officia praesentium repellendus soluta, earum suscipit ipsam libero!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nulla ipsam totam dignissimos nihil dolore recusandae, asperiores qui facere expedita quod inventore vero laborum. Dolor consequuntur quae neque at voluptatibus voluptatem laborum animi, nam cum, quas alias ut laudantium ea recusandae perferendis exercitationem fuga sequi doloribus obcaecati non vel ipsam consectetur hic omnis? Sapiente, et ipsa iusto placeat dignissimos necessitatibus deserunt possimus dolorem voluptates recusandae a veritatis ipsam. Itaque, magni ad corporis atque impedit perspiciatis, iure aspernatur perferendis consequuntur expedita asperiores aliquid commodi earum veritatis ducimus provident! Dicta, molestiae. Consequuntur, nisi velit! Officia praesentium repellendus soluta, earum suscipit ipsam libero!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nulla ipsam totam dignissimos nihil dolore recusandae, asperiores qui facere expedita quod inventore vero laborum. Dolor consequuntur quae neque at voluptatibus voluptatem laborum animi, nam cum, quas alias ut laudantium ea recusandae perferendis exercitationem fuga sequi doloribus obcaecati non vel ipsam consectetur hic omnis? Sapiente, et ipsa iusto placeat dignissimos necessitatibus deserunt possimus dolorem voluptates recusandae a veritatis ipsam. Itaque, magni ad corporis atque impedit perspiciatis, iure aspernatur perferendis consequuntur expedita asperiores aliquid commodi earum veritatis ducimus provident! Dicta, molestiae. Consequuntur, nisi velit! Officia praesentium repellendus soluta, earum suscipit ipsam libero!</p>
+        <section id="features">
+            <h2>Interaction</h2>
+            <p>The scene reacts continuously to the page position. The title grows within a controlled range, the landscape layers shift independently, and the background changes as the visitor moves beyond the hero section.</p>
+        </section>
 
-        </div>
+        <section id="implementation">
+            <h2>Implementation</h2>
+            <p>The page uses semantic HTML, responsive CSS, and dependency-free JavaScript. Animation updates are scheduled with <code>requestAnimationFrame</code> to keep scroll handling smooth.</p>
+        </section>
+    </main>
 
-
-
-        <script src = "main.js"></script>
-    </body>
+    <script src="main.js"></script>
+</body>
 </html>
