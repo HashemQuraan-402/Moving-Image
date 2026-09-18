@@ -1,4 +1,4 @@
-# scroll-parallax-animation — Parallax Landing Page
+# Scroll Parallax Animation — Parallax Landing Page
 
 A responsive front-end experiment that creates a layered parallax scene as the user scrolls. The project demonstrates scroll-based DOM updates, CSS positioning, image layering, and animated visual transitions without external frameworks.
 
@@ -24,7 +24,7 @@ No installation or build step is required.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/HashemQuraan-402/Moving-Image.git
+   git clone https://github.com/HashemQuraan-402/scroll-parallax-animation.git
    ```
 
 2. Open the cloned folder.
@@ -34,7 +34,7 @@ No installation or build step is required.
 ## Project Structure
 
 ```text
-Moving-Image/
+scroll-parallax-animation/
 ├── images/
 │   ├── boat6.webp
 │   ├── moon2.webp
@@ -71,4 +71,3 @@ The visual assets are included for educational demonstration. Verify the license
 
 - [GitHub](https://github.com/HashemQuraan-402)
 - [LinkedIn](https://www.linkedin.com/in/hashem-quraan-b561453ab)
-
