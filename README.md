@@ -2,6 +2,10 @@
 
 A responsive front-end experiment that creates a layered parallax scene as the user scrolls. The project demonstrates scroll-based DOM updates, CSS positioning, image layering, and animated visual transitions without external frameworks.
 
+## Live Demo
+
+[View the live project on GitHub Pages](https://hashemquraan-402.github.io/scroll-parallax-animation/)
+
 ## Features
 
 - Layered stars, moon, mountains, river, and boat artwork
@@ -59,7 +63,6 @@ This project is a front-end interaction demo. It does not include a back end, pe
 - Add automated browser tests
 - Improve keyboard navigation and reduced-motion support
 - Optimize scroll updates with `requestAnimationFrame`
-- Add a live GitHub Pages deployment
 
 ## Asset Notice
 
