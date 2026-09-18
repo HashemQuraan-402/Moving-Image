@@ -1,4 +1,4 @@
-# Moving Image — Parallax Landing Page
+# scroll-parallax-animation — Parallax Landing Page
 
 A responsive front-end experiment that creates a layered parallax scene as the user scrolls. The project demonstrates scroll-based DOM updates, CSS positioning, image layering, and animated visual transitions without external frameworks.
 
